@@ -61,7 +61,7 @@ ChatApplication/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/ShameelShajaad/ChatApplication.git
+   git clone https://github.com/ShameelShajaad/Chat-Application.git
 
 2. **Open in NetBeans**
    -Open NetBeans IDE

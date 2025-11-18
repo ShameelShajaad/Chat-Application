@@ -16,6 +16,6 @@ public class Sender {
     }
     
     public String message(String msg){
-        return name+": "+msg;
+        return msg;
     }
 }

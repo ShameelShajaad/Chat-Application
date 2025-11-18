@@ -14,9 +14,9 @@ public class ChatManager {
         senderWindows.add(window);
     }
 
-    public static void setMessage(String msg) {
+    public static void setMessage(String senderName,String msg) {
         for (SenderWindow window : senderWindows) {
-            window.receiveMessage(msg);
+            window.receiveMessage(senderName,msg);
         }
     }
 }

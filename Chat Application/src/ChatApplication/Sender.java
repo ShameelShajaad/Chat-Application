@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ChatApplication;
 
 /**
@@ -9,5 +5,17 @@ package ChatApplication;
  * @author Shameel Shajaad
  */
 public class Sender {
+    private String name;
     
+    public Sender(String name){
+        this.name=name;
+    }
+    
+    public String getSenderName(){
+        return name;
+    }
+    
+    public String message(String msg){
+        return name+": "+msg;
+    }
 }

@@ -13,6 +13,7 @@ public class SenderWindow extends javax.swing.JFrame {
         initComponents();
         this.setTitle(senderName);
         this.lblSenderName.setText(senderName);
+        ChatManager.addWindow(this);
     }
 
     /**
@@ -109,11 +110,18 @@ public class SenderWindow extends javax.swing.JFrame {
         String msg=jTextFieldMessage.getText();
         
         if(!msg.isEmpty()){
-            jTextMessageArea.append("Me: "+msg+"\n\n");
+            Sender sender=new Sender(lblSenderName.getText());
+            String message=sender.message(msg);
+            
+            ChatManager.setMessage(message);
+            
             jTextFieldMessage.setText("");
         }
     }//GEN-LAST:event_btnSendActionPerformed
 
+    public void receiveMessage(String msg){
+        jTextMessageArea.append(msg+"\n\n");
+    }
     /**
      * @param args the command line arguments
      */

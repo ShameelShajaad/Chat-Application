@@ -6,6 +6,6 @@ package ChatApplication;
  */
 public class Main {
     public static void main(String[] args) {
-        
+        new AddSenderForm().setVisible(true);
     }
 }
